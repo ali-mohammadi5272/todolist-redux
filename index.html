@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+      }
+
+      input {
+        font-size: 30px;
+        padding: 5px 10px;
+      }
+      ul {
+        color: white;
+        font-size: 35px;
+        list-style-type: none;
+      }
+      li {
+        margin: 10px 0px;
+        display: flex;
+        background-color: gray;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0px 0px 0px 10px;
+      }
+      li div {
+        display: flex;
+        align-items: stretch;
+        gap: 10px;
+      }
+      li span {
+        cursor: pointer;
+      }
+      li button {
+        font-size: 25px;
+        padding: 10px;
+      }
+    </style>
+    <title>Todolist</title>
+  </head>
+  <body>
+    <form action="">
+      <input type="text" placeholder="todo..." />
+      <input type="submit" value="submit" />
+    </form>
+    <ul></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.1/redux.min.js"></script>
+    <script type="module" src="./app.js"></script>
+  </body>
+</html>
