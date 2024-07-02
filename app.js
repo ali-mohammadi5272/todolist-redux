@@ -49,9 +49,10 @@ const insertToDom = (datas = []) => {
 // form submit
 formElem.addEventListener("submit", (e) => {
   e.preventDefault();
-  const action = addTodoAction(inputElem.value);
-  store.dispatch(action);
-  inputElem.value = "";
-  console.log(store.getState());
-  insertToDom(store.getState());
+  if (inputElem.value.trim()) {
+    const action = addTodoAction(inputElem.value);
+    store.dispatch(action);
+    inputElem.value = "";
+    insertToDom(store.getState());
+  }
 });
